@@ -8,4 +8,18 @@ public class App {
         System.out.println("Koira 39");
         System.out.println("Hevonen 38");
     }
+
+    public static boolean onkoKuumetta(String kohde, int lampo) {
+        switch (kohde.toLowerCase()) {
+            case "ihminen":
+                return lampo >= 38;
+            case "koira":
+                return lampo >= 39;
+            case "hevonen":
+                return lampo >= 38;
+
+            default:
+                return false;
+        }
+    }
 }
